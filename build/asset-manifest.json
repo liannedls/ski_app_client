@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d4e0a58d.chunk.css",
+    "main.js": "/static/js/main.05ab6d0f.chunk.js",
+    "main.js.map": "/static/js/main.05ab6d0f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a932d43a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a932d43a.js.map",
+    "static/js/2.c508061a.chunk.js": "/static/js/2.c508061a.chunk.js",
+    "static/js/2.c508061a.chunk.js.map": "/static/js/2.c508061a.chunk.js.map",
+    "static/css/3.f99ad639.chunk.css": "/static/css/3.f99ad639.chunk.css",
+    "static/js/3.0660ee26.chunk.js": "/static/js/3.0660ee26.chunk.js",
+    "static/js/3.0660ee26.chunk.js.map": "/static/js/3.0660ee26.chunk.js.map",
+    "static/js/4.10d0d952.chunk.js": "/static/js/4.10d0d952.chunk.js",
+    "static/js/4.10d0d952.chunk.js.map": "/static/js/4.10d0d952.chunk.js.map",
+    "static/js/5.1a0e7398.chunk.js": "/static/js/5.1a0e7398.chunk.js",
+    "static/js/5.1a0e7398.chunk.js.map": "/static/js/5.1a0e7398.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/3.f99ad639.chunk.css.map": "/static/css/3.f99ad639.chunk.css.map",
+    "static/css/main.d4e0a58d.chunk.css.map": "/static/css/main.d4e0a58d.chunk.css.map",
+    "static/js/2.c508061a.chunk.js.LICENSE.txt": "/static/js/2.c508061a.chunk.js.LICENSE.txt",
+    "static/js/3.0660ee26.chunk.js.LICENSE.txt": "/static/js/3.0660ee26.chunk.js.LICENSE.txt",
+    "static/js/4.10d0d952.chunk.js.LICENSE.txt": "/static/js/4.10d0d952.chunk.js.LICENSE.txt",
+    "static/js/5.1a0e7398.chunk.js.LICENSE.txt": "/static/js/5.1a0e7398.chunk.js.LICENSE.txt",
+    "static/media/bye.7bd7fd8f.jpg": "/static/media/bye.7bd7fd8f.jpg",
+    "static/media/falling.7505d40b.jpg": "/static/media/falling.7505d40b.jpg",
+    "static/media/putonskis.b3cec969.jpg": "/static/media/putonskis.b3cec969.jpg",
+    "static/media/slidding.13472a96.jfif": "/static/media/slidding.13472a96.jfif",
+    "static/media/turn.89e31212.jpg": "/static/media/turn.89e31212.jpg",
+    "static/media/wedge.fd505bb5.png": "/static/media/wedge.fd505bb5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a932d43a.js",
+    "static/css/3.f99ad639.chunk.css",
+    "static/js/3.0660ee26.chunk.js",
+    "static/css/main.d4e0a58d.chunk.css",
+    "static/js/main.05ab6d0f.chunk.js"
+  ]
+}
