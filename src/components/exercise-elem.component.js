@@ -105,6 +105,7 @@ export default class ExerciseElem extends Component {
     }
 
    render() {
+
     let button;
     if (this.props.val === "Add") {
       button = <td><button onClick={this.add} className="btn add" style = {{backgroundColor:this.state.colorbutton}}>Add</button></td>
@@ -131,11 +132,10 @@ export default class ExerciseElem extends Component {
     }else{
         age = <td>{this.props.exercise.age}</td>
     }
-    
-    return (
-    <tr key = {this.props.exercise._id} >        
-        <td>{this.props.exercise.name}</td>
-        <td>   
+
+    let desc;
+    if(this.props.exercise.name !== null){
+        desc = <td>   
         <Button style = {{}} className="btn desc"
         onClick={() => this.toggleOpen()}
         aria-controls="example-collapse-text"
@@ -150,6 +150,14 @@ export default class ExerciseElem extends Component {
         </div>
       </Collapse>
   </td>
+    }else{
+        desc = <td></td>
+    }
+    
+    return (
+    <tr key = {this.props.exercise._id} >        
+        <td>{this.props.exercise.name}</td>
+        {desc}
         <td>{this.props.exercise.skill}</td>
         {age}
         {seemore}
