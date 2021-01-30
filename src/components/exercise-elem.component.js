@@ -13,7 +13,7 @@ export default class ExerciseElem extends Component {
         this.state = {
         count : 1,
         pointless : 1,
-        colorbutton: "green",
+        colorbutton: "#343a40",
         opendesc: false
         }
     }
