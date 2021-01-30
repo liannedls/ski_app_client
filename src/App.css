@@ -172,7 +172,7 @@ h4{
 .seeall-button{
   display: flex;
 align-items: center;
-
+justify-content: flex-end;
 }
 
 .seeall-button button{
@@ -180,6 +180,8 @@ align-items: center;
   margin-right:10px;
   text-align: center;
   padding-bottom: 10px;
+  
+  height: 38px;
 }
 
 .btn.desc{
@@ -197,6 +199,7 @@ align-items: center;
   border-color: rgb(65, 63, 63);
   background-color:#343a40;
 }
+
 @media only screen and (max-width: 720px) {
   /* horizontal scrollbar for tables if mobile screen */
   table {
@@ -225,11 +228,15 @@ align-items: center;
     justify-content: center;
   }
   .seeall-button{
+    display: flex;
+    text-align: center;
     justify-content: center;
+  
   }
   .seeall-button button{
     width:100%;
     margin-left: 10px;
+    margin-top:10px;
   }
   img{
     width: 50%
@@ -244,5 +251,8 @@ align-items: center;
   }
   ul.a{
     text-align: center;
+  }
+  .searchfield{
+    justify-content: center;
   }
 }
