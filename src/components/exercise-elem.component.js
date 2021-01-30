@@ -84,14 +84,19 @@ export default class ExerciseElem extends Component {
     }
 
     componentDidMount(){
-        const listIds = localStorage.getItem('id_list');
 
+        const listIds = localStorage.getItem('id_list');
+        if(listIds !== null && listIds !== "" && this.props.exercise !== null && this.props.exercise !==""){
+        
         if(listIds.includes(this.props.exercise._id)){
            this.setState({colorbutton:"green"})
         }       
         else {
             this.setState({colorbutton:"#343a40"})
     }
+    }else{
+        console.log("error : list ID empty")
+}
 }
 
     toggleOpen(){
