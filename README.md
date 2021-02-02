@@ -39,7 +39,7 @@ Once the dependencies are installed, you can run  `npm start` to start the appli
 ---
 ## Feedback
 If you have any feedback to share, I would love to know it!
-[feedback](https://github.com/liannedls/feedback/issues/new) 
+[Leave feedback.](https://github.com/liannedls/ski_app_client/issues/new) 
 
 ---
 
