@@ -37,6 +37,11 @@ Clone this repo to your desktop and run `npm install` to install all the depende
 Once the dependencies are installed, you can run  `npm start` to start the application. You will then be able to access it at localhost:3000
 
 ---
+## Feedback
+If you have any feedback to share, I would love to know it!
+[feedback](https://github.com/liannedls/feedback/issues/new) 
+
+---
 
 ## License
 >You can check out the full license [here](https://github.com/liannedls/ski_app_client/blob/master/LICENSE)
