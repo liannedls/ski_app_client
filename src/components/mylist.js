@@ -17,7 +17,7 @@ export default class MyList extends Component {
     this.saveTitle = this.saveTitle.bind(this);
     this.state = {
       id_list: "",
-      title: "Untitled Lesson",
+      title: localStorage.getItem("title"),
       newTitle: "test",
       exercises: [
         { _id: "", name: "", description: "", group: "", age: "", skill: "" },
