@@ -4,6 +4,10 @@ Ski Instructor Lesson Planner - Client Side
 
 This is a React project, the client side of a MERN web application. 
 
+## About
+
+I Built this application to help ski instructors plan their lessons. From my own experiences as a ski instructor, when you're starting out it's hard to think of enough exercises that are appropriate for your students skill level. Using this app, you can generate a lesson plan based on skill level (beginner, intermediate, advanced) and age (adult, children). Exercises include a description and link to an external video for reference. Generated lists, found at /mylist, can be printed as a PDF. 
+
 ![Chat Preview](./SkiLessonPlannerScreenShot.png)
 
 ---
