@@ -137,7 +137,8 @@ export default class CreateExercise extends Component {
     ReactGA.pageview(window.location.pathname + window.location.search);
     return (
       <div>
-        <h1 className="justify-center">Create a Ski Lesson Plan</h1>
+        <h1 className="justify-center">Exercise Database</h1>
+        <h2 className="justify-center">Create a Ski Lesson Plan</h2>
         <Container>
           <form onSubmit={this.onSubmit} className="">
             <Row>
