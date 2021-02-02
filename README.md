@@ -35,6 +35,6 @@ Once the dependencies are installed, you can run  `npm start` to start the appli
 ---
 
 ## License
->You can check out the full license [here](https://github.com/IgorAntun/node-chat/blob/master/LICENSE)
+>You can check out the full license [here](https://github.com/liannedls/ski_app_client/master/LICENSE)
 
 This project is licensed under the terms of the **MIT** license.
