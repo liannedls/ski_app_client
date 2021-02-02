@@ -180,7 +180,8 @@ export default class ExerciseElem extends Component {
     }
 
     let desc;
-    if (this.props.exercise.name !== null) {
+    const listIds = localStorage.getItem("id_list");
+    if (this.props.exercise.name !== "" && listIds !== "") {
       desc = (
         <td>
           <Button
