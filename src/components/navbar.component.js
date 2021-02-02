@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import logo from "./images/ski.svg";
 
 export default class Navbar extends Component {
   render() {
     return (
       <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-        <li className="navbar-brand">Ski Lesson Planner</li>
+        <img src={logo} alt="Slidding on Skis" className="logo-nav" />
         <div className="collpase navbar-collapse">
           <ul className="navbar-nav mr-auto">
             <li className="navbar-item">
