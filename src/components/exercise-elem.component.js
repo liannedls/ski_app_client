@@ -54,7 +54,7 @@ export default class ExerciseElem extends Component {
         console.log("error : list ID empty");
       }
     } else {
-      this.setState({ colorbutton: "green" });
+      this.setState({ colorbutton: "#6CB84F" });
       if (listIds === "" || listIds === null) {
         const newIDlist = JSON.stringify(this.props.exercise._id);
         localStorage.setItem("id_list", newIDlist);
@@ -117,7 +117,7 @@ export default class ExerciseElem extends Component {
       this.props.exercise !== ""
     ) {
       if (listIds.includes(this.props.exercise._id)) {
-        this.setState({ colorbutton: "green" });
+        this.setState({ colorbutton: "#6CB84F" });
       } else {
         this.setState({ colorbutton: "#343a40" });
       }
@@ -139,7 +139,10 @@ export default class ExerciseElem extends Component {
           <button
             onClick={this.add}
             className="btn add"
-            style={{ backgroundColor: this.state.colorbutton }}
+            style={{
+              backgroundColor: this.state.colorbutton,
+              borderColor: this.state.colorbutton,
+            }}
           >
             Add
           </button>
