@@ -37,7 +37,7 @@ export default class App extends Component {
           </MetaTags>
           <Navbar />
           <br />
-          <Route path="/" component={CreateExercise} />
+          <Route path="/database" component={CreateExercise} />
           <Route path="/mylist" component={(props) => <MyList {...props} />} />
           <Route path="/firsttimer" component={FirstTimer} />
         </div>
