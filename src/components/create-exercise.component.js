@@ -244,7 +244,7 @@ export default class CreateExercise extends Component {
           <ExerciseList
             exercises={this.state.exercises}
             key={this.state.exercises._id}
-            val={"Add"}
+            val={"Add To Lesson"}
             handler={this.handler}
           />
         ) : null}
