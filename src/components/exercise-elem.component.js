@@ -24,7 +24,12 @@ export default class ExerciseElem extends Component {
     if (listIds !== "" && this.props.exercise !== "") {
       if (listIds.includes(this.props.exercise._id)) {
         this.setState({ colorbutton: "#343a40" });
-        if (listIds !== "" && this.props.exercise !== "") {
+        if (
+          listIds !== null &&
+          listIds !== "" &&
+          this.props.exercise !== null &&
+          this.props.exercise !== ""
+        ) {
           if (listIds.includes(JSON.stringify(this.props.exercise._id) + ",")) {
             const newIDlist = listIds.replace(
               JSON.stringify(this.props.exercise._id) + ",",
@@ -72,7 +77,12 @@ export default class ExerciseElem extends Component {
   del(e) {
     e.preventDefault();
     const listIds = localStorage.getItem("id_list");
-    if (listIds !== "" && this.props.exercise !== "") {
+    if (
+      listIds !== null &&
+      listIds !== "" &&
+      this.props.exercise !== null &&
+      this.props.exercise !== ""
+    ) {
       if (listIds.includes(JSON.stringify(this.props.exercise._id) + ",")) {
         const newIDlist = listIds.replace(
           JSON.stringify(this.props.exercise._id) + ",",
@@ -108,7 +118,12 @@ export default class ExerciseElem extends Component {
 
   componentDidMount() {
     const listIds = localStorage.getItem("id_list");
-    if (listIds !== "" && this.props.exercise !== "") {
+    if (
+      listIds !== null &&
+      listIds !== "" &&
+      this.props.exercise !== null &&
+      this.props.exercise !== ""
+    ) {
       if (listIds.includes(this.props.exercise._id)) {
         this.setState({ colorbutton: "#6CB84F" });
       } else {
