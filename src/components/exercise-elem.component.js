@@ -21,7 +21,12 @@ export default class ExerciseElem extends Component {
     e.preventDefault();
     const listIds = localStorage.getItem("id_list");
     console.log("hi joel do you see this?");
-    if (listIds !== "" && this.props.exercise !== "") {
+    if (
+      listIds !== null &&
+      listIds !== "" &&
+      this.props.exercise !== null &&
+      this.props.exercise !== ""
+    ) {
       if (listIds.includes(this.props.exercise._id)) {
         this.setState({ colorbutton: "#343a40" });
         if (
@@ -71,6 +76,7 @@ export default class ExerciseElem extends Component {
       console.log("this error is for you joel ;) should be adding it here");
       const newIDlist = JSON.stringify(this.props.exercise._id);
       localStorage.setItem("id_list", newIDlist);
+      this.setState({ colorbutton: "#6CB84F" });
     }
   }
 
@@ -143,7 +149,7 @@ export default class ExerciseElem extends Component {
     let button;
     if (this.props.val === "Add To Lesson") {
       button = (
-        <td>
+        <td className="tablebutton">
           <button
             onClick={this.add}
             className="btn add"
@@ -161,7 +167,7 @@ export default class ExerciseElem extends Component {
       const listIds = localStorage.getItem("id_list");
       if (this.props.exercise.name !== "" && listIds !== "") {
         button = (
-          <td>
+          <td className="tablebutton">
             <button onClick={this.del} className="btn btn-outline-dark">
               Del
             </button>
@@ -193,7 +199,7 @@ export default class ExerciseElem extends Component {
     let desc;
     if (this.props.exercise.name !== "") {
       desc = (
-        <td>
+        <td className="desc">
           <Button
             style={{}}
             className="btn desc"

@@ -32,6 +32,29 @@
   filter: brightness(0) invert(1);
 }
 
+.table {
+  text-align: center;
+}
+
+.table .namecol {
+  width: 5px;
+}
+.table .desc {
+  text-align: left;
+  justify-content: left;
+}
+.table .staticfields {
+  width: 120px;
+}
+.table .staticadd {
+  width: 160px;
+}
+
+.tablebutton {
+  display: flex;
+  justify-content: center;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -159,6 +182,7 @@ h4 {
 
 .searchfield input {
   margin: 0px 0px;
+  width: 50%;
 }
 
 .add {

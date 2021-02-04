@@ -223,7 +223,7 @@ export default class CreateExercise extends Component {
               <Col className="searchfield">
                 <input
                   onChange={this.onChangeSearch}
-                  placeholder="  Enter Search"
+                  placeholder="  Find exercises with keywords"
                 />
                 <button onClick={this.loadSearch} className="btn btn-dark">
                   Search
