@@ -20,6 +20,7 @@ export default class ExerciseElem extends Component {
   add(e) {
     e.preventDefault();
     const listIds = localStorage.getItem("id_list");
+    console.log("hi joel do you see this?");
     if (
       listIds !== null &&
       listIds !== "" &&
