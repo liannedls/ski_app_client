@@ -20,49 +20,59 @@ export default class ExerciseElem extends Component {
   add(e) {
     e.preventDefault();
     const listIds = localStorage.getItem("id_list");
-
-    if (listIds.includes(this.props.exercise._id)) {
-      this.setState({ colorbutton: "#343a40" });
-      if (
-        listIds !== null &&
-        listIds !== "" &&
-        this.props.exercise !== null &&
-        this.props.exercise !== ""
-      ) {
-        if (listIds.includes(JSON.stringify(this.props.exercise._id) + ",")) {
-          const newIDlist = listIds.replace(
-            JSON.stringify(this.props.exercise._id) + ",",
-            ""
-          );
-          localStorage.setItem("id_list", newIDlist);
-        } else if (
-          listIds.includes("," + JSON.stringify(this.props.exercise._id))
+    if (
+      listIds !== null &&
+      listIds !== "" &&
+      this.props.exercise !== null &&
+      this.props.exercise !== ""
+    ) {
+      if (listIds.includes(this.props.exercise._id)) {
+        this.setState({ colorbutton: "#343a40" });
+        if (
+          listIds !== null &&
+          listIds !== "" &&
+          this.props.exercise !== null &&
+          this.props.exercise !== ""
         ) {
-          const newIDlist = listIds.replace(
-            "," + JSON.stringify(this.props.exercise._id),
-            ""
-          );
-          localStorage.setItem("id_list", newIDlist);
-        } else if (listIds.includes(JSON.stringify(this.props.exercise._id))) {
-          const newIDlist = listIds.replace(
-            JSON.stringify(this.props.exercise._id),
-            ""
-          );
-          localStorage.setItem("id_list", newIDlist);
+          if (listIds.includes(JSON.stringify(this.props.exercise._id) + ",")) {
+            const newIDlist = listIds.replace(
+              JSON.stringify(this.props.exercise._id) + ",",
+              ""
+            );
+            localStorage.setItem("id_list", newIDlist);
+          } else if (
+            listIds.includes("," + JSON.stringify(this.props.exercise._id))
+          ) {
+            const newIDlist = listIds.replace(
+              "," + JSON.stringify(this.props.exercise._id),
+              ""
+            );
+            localStorage.setItem("id_list", newIDlist);
+          } else if (
+            listIds.includes(JSON.stringify(this.props.exercise._id))
+          ) {
+            const newIDlist = listIds.replace(
+              JSON.stringify(this.props.exercise._id),
+              ""
+            );
+            localStorage.setItem("id_list", newIDlist);
+          }
+        } else {
+          console.log("error : list ID empty");
         }
       } else {
-        console.log("error : list ID empty");
+        this.setState({ colorbutton: "#6CB84F" });
+        if (listIds === "" || listIds === null) {
+          const newIDlist = JSON.stringify(this.props.exercise._id);
+          localStorage.setItem("id_list", newIDlist);
+        } else {
+          const newIDlist =
+            listIds + "," + JSON.stringify(this.props.exercise._id);
+          localStorage.setItem("id_list", newIDlist);
+        }
       }
     } else {
-      this.setState({ colorbutton: "#6CB84F" });
-      if (listIds === "" || listIds === null) {
-        const newIDlist = JSON.stringify(this.props.exercise._id);
-        localStorage.setItem("id_list", newIDlist);
-      } else {
-        const newIDlist =
-          listIds + "," + JSON.stringify(this.props.exercise._id);
-        localStorage.setItem("id_list", newIDlist);
-      }
+      console.log("this error is for you joel ;)");
     }
   }
 
@@ -133,7 +143,7 @@ export default class ExerciseElem extends Component {
 
   render() {
     let button;
-    if (this.props.val === "Add") {
+    if (this.props.val === "Add To Lesson") {
       button = (
         <td>
           <button
